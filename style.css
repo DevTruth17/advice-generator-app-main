@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Fredoka:wght@300&family=Inter:wght@100&family=Manrope:wght@200&family=Quicksand:wght@300&family=Teko:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: hsl(218, 23%, 16%);
+    font-family: "Manrope";
+    font-weight: 800;
+}
+.container {
+    position: relative;
+    left: 30%;
+    top: 25vh;
+    width: 40%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: hsl(217, 19%, 24%);
+    border-radius: 10px;
+    padding: 20px;
+}
+.id {
+    color: hsl(150, 100%, 66%);
+    text-transform: uppercase;
+}
+.text {
+    color: hsl(193, 38%, 86%);
+    font-size: 28px;
+    text-align: center;
+}
+.divider {
+    width: 90%;
+}
+.divider img {
+    width: 100%;
+}
+.dice {
+    position: absolute;
+    bottom: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(50%);
+    background: hsl(150, 100%, 66%);
+    cursor: pointer;
+}
+.dice img {
+    width: 40%;
+    pointer-events: none;
+}
+.dice:active {
+    box-shadow: 0 0 15px 2px hsl(150, 100%, 66%);
+}
+
+@media (max-width: 600px) {
+    .container {
+        left: 5%;
+        width: 90%;
+    }
+    .dice {
+        width: 60px;
+        height: 60px;
+    }
+    .divider img {
+        content: url("./images/pattern-divider-mobile.svg");
+    }
+}
